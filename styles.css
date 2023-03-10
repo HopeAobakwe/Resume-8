@@ -41,7 +41,19 @@ section{
     max-width: 1200px;
     min-height: 1000px;
 }
-
+@media only screen and (min-width:400px) {
+    .container{
+        animation-name: Hope;
+        width: fit-content;
+        length: fit-content;
+        animation-duration: 3s;
+        animation-iteration-count:calc(3s);
+        animation-direction:reverse;
+    }
+    @keyframes Hope{
+       20%{transform:scale(2,3)}
+    }
+}
 .sideA{
     position:relative;
     background-color: rgba(0,0,0,0);
@@ -51,14 +63,14 @@ section{
 
 .sideB{
     position:relative;
-    background-color: white;
+    background-color: whitesmoke;
     padding:20px;
     border-style: double;
 }
 
 @media only screen and (min-width: 999px) {
     .sideB{
-        background-color: white);
+        background-color: white;
     }
 }
 form {
@@ -87,16 +99,3 @@ body{
     }
 }
 
-@media only screen and (min-width:400px) {
-    html{
-        animation-name: Hope;
-        width: fit-content;
-        length: fit-content;
-        animation-duration: 3s;
-        animation-iteration-count:calc(3s);
-        animation-direction:reverse;
-    }
-    @keyframes Hope{
-       20%{transform:scale(2,3)}
-    }
-}
