@@ -92,17 +92,11 @@ body{
         animation-name: Hope;
         width: fit-content;
         length: fit-content;
-        animation-duration: 6s;
-        animation-iteration-count:calc(6s);
-        animation-direction:normal;
+        animation-duration: 3s;
+        animation-iteration-count:calc(3s);
+        animation-direction:reverse;
     }
     @keyframes Hope{
-       0% {background-color: #ACA9BB;}
-       20% {background-color: white;
-            transform:scale(2,3);
-       50% {background-color: #ACA9BB );
-           border-radius: 50%;
-       100% {background-color: #ACA9BB;}
-    }
+       20%{transform:scale(2,3)}
     }
 }
